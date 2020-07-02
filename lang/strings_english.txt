@@ -1,0 +1,58 @@
+<?php
+/**
+ * MicrosoftTeams Integration
+ * Copyright (C) Karim Ratib (karim@meedan.com)
+ *
+ * MicrosoftTeams Integration is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License 2
+ * as published by the Free Software Foundation.
+ *
+ * MicrosoftTeams Integration is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with MicrosoftTeams Integration; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+ * or see http://www.gnu.org/licenses/.
+ */
+
+$s_plugin_MicrosoftTeams_ = '';
+$s_plugin_MicrosoftTeams_title = 'Microsoft Teams Integration';
+$s_plugin_MicrosoftTeams_description = 'Adds Microsoft Teams integration to Mantis.';
+$s_plugin_MicrosoftTeams_config = 'Configuration';
+$s_plugin_MicrosoftTeams_url_webhook = 'Default Microsoft Teams Webhook URL';
+$s_plugin_MicrosoftTeams_url_webhook_test = 'Test Webhook';
+$s_plugin_MicrosoftTeams_url_webhook_test_text = 'Hello, this is a test for the MantisBT-Microsoft Teams plugin :wave:';
+$s_plugin_MicrosoftTeams_url_webhooks = 'Additional Microsoft Teams Webhook URLs';
+$s_plugin_MicrosoftTeams_bot_name = 'Microsoft Teams Bot Name';
+$s_plugin_MicrosoftTeams_bot_icon = 'Microsoft Teams Bot Icon';
+$s_plugin_MicrosoftTeams_notifications = 'Notification Settings';
+$s_plugin_MicrosoftTeams_notification_bug_report = 'Notify on issue added';
+$s_plugin_MicrosoftTeams_notification_bug_update = 'Notify on issue edited';
+$s_plugin_MicrosoftTeams_notification_bug_deleted = 'Notify on issue deleted';
+$s_plugin_MicrosoftTeams_notification_bugnote_add = 'Notify on note added';
+$s_plugin_MicrosoftTeams_notification_bugnote_edit = 'Notify on note edited';
+$s_plugin_MicrosoftTeams_notification_bugnote_deleted = 'Notify on note deleted';
+$s_plugin_MicrosoftTeams_skip_private = 'Skip notification on private issues and notes';
+$s_plugin_MicrosoftTeams_skip_bulk = 'Skip notification on bulk actions';
+$s_plugin_MicrosoftTeams_link_names = 'Turn user names into MicrosoftTeams links (may cause excess MicrosoftTeams notifications)';
+$s_plugin_MicrosoftTeams_default_channel = 'Default Microsoft Teams Channel';
+$s_plugin_MicrosoftTeams_channels = 'Microsoft Teams Channels';
+$s_plugin_MicrosoftTeams_usernames = 'Microsoft Teams Usernames';
+$s_plugin_MicrosoftTeams_columns = 'Microsoft Teams Columns';
+$s_plugin_MicrosoftTeams_bug_created = '[%s] %s created <%s|%s>.';
+$s_plugin_MicrosoftTeams_bug_updated = '[%s] %s updated <%s|%s>.';
+$s_plugin_MicrosoftTeams_bug_deleted = '[%s] %s deleted %s.';
+$s_plugin_MicrosoftTeams_bugnote_created = "[%s] %s commented on <%s|%s> saying:";
+$s_plugin_MicrosoftTeams_bugnote_updated = "[%s] %s edited a comment on <%s|%s> saying:";
+$s_plugin_MicrosoftTeams_bugnote_deleted = "[%s] %s deleted a comment on <%s|%s>.";
+$s_plugin_MicrosoftTeams_no_user = '(no one)';
+$s_plugin_MicrosoftTeams_unknown_field = '(don\'t know how to render field "%s")';
+$s_plugin_MicrosoftTeams_skip = 'Skip Microsoft Teams notification';
+$s_plugin_MicrosoftTeams_action_update = 'Update';
+
+$MANTIS_ERROR['plugin_MicrosoftTeams_ERROR_NO_CURL'] = 'The Microsoft Teams plugin requires the cURL PHP extension (http://php.net/curl)';
+$MANTIS_ERROR['plugin_MicrosoftTeams_ERROR_PHP_VERSION'] = 'The Microsoft Teams plugin requires PHP 5.3.0 or higher';
+$MANTIS_ERROR['plugin_MicrosoftTeams_ERROR_CURL'] = 'The request to Microsoft Teams didn\'t go through.  Check your webhook URL.  Also make sure there are no unusual characters in your bot name or bot icon settings.  Further details may be printed below this box.';

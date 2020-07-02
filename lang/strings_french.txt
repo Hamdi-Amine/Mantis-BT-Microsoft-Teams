@@ -1,0 +1,53 @@
+<?php
+/**
+ * MicrosoftTeams Integration
+ * Copyright (C) Karim Ratib (karim@meedan.com)
+ *
+ * MicrosoftTeams Integration is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License 2
+ * as published by the Free Software Foundation.
+ *
+ * MicrosoftTeams Integration is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with MicrosoftTeams Integration; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA
+ * or see http://www.gnu.org/licenses/.
+ *
+ * @author Karim Ratib
+ */
+
+$s_plugin_MicrosoftTeams_ = '';
+$s_plugin_MicrosoftTeams_title = 'Intégration de Microsoft Teams';
+$s_plugin_MicrosoftTeams_description = 'Plugiciel d\'intégration pour envoyer les notifications de Mantis à des channels de Microsoft Teams.';
+$s_plugin_MicrosoftTeams_config = 'Configuration';
+$s_plugin_MicrosoftTeams_url_webhook = 'URL de webhook Microsoft Teams de défaut';
+$s_plugin_MicrosoftTeams_url_webhook_test = 'Valider webhook';
+$s_plugin_MicrosoftTeams_url_webhook_test_text = 'Bonjour, ceci est un test du plugiciel MantisBT-Microsoft Teams :wave:';
+$s_plugin_MicrosoftTeams_url_webhooks = 'URLs de webhook Microsoft Teams additionnels';
+$s_plugin_MicrosoftTeams_bot_name = 'Nom du bot Microsoft Teams';
+$s_plugin_MicrosoftTeams_bot_icon = 'Icône du bot Microsoft Teams';
+$s_plugin_MicrosoftTeams_skip_private = 'Ne pas envoyer de notification pour les bogues et notes privés';
+$s_plugin_MicrosoftTeams_skip_bulk = 'Ne pas envoyer de notification pour les actions en bloc';
+$s_plugin_MicrosoftTeams_link_names = 'Convertir les noms d\'utilisateurs en liens Microsoft Teams (peut causer des notifications excessives dans MicrosoftTeams)';
+$s_plugin_MicrosoftTeams_default_channel = 'Channel Microsoft Teams de défault';
+$s_plugin_MicrosoftTeams_channels = 'Correspondances des channels';
+$s_plugin_MicrosoftTeams_usernames = 'Correspondances des noms d\'utilisateurs';
+$s_plugin_MicrosoftTeams_columns = 'Champs de bogues';
+$s_plugin_MicrosoftTeams_bug_created = '[%s] %s a crée <%s|%s>.';
+$s_plugin_MicrosoftTeams_bug_updated = '[%s] %s a modifié <%s|%s>.';
+$s_plugin_MicrosoftTeams_bug_deleted = '[%s] %s a effacé %s.';
+$s_plugin_MicrosoftTeams_bugnote_created = "[%s] %s a commenté sur <%s> pour dire:  %s";
+$s_plugin_MicrosoftTeams_bugnote_updated = "[%s] %s a modifié un commentaire sur <%s> pour dire:  %s";
+$s_plugin_MicrosoftTeams_bugnote_deleted = "[%s] %s a effacé un commentaire sur <%s|%s>.";
+$s_plugin_MicrosoftTeams_no_user = '(personne)';
+$s_plugin_MicrosoftTeams_unknown_field = '(incapable de visualiser le champ "%s")';
+$s_plugin_MicrosoftTeams_skip = 'Ne pas envoyer de notification sur Microsoft Teams';
+$s_plugin_MicrosoftTeams_action_update = 'Envoyer';
+
+$MANTIS_ERROR['plugin_MicrosoftTeams_ERROR_NO_CURL'] = 'Le plugiciel Microsoft Teams requiert l\'extension cURL (http://php.net/curl)';
+$MANTIS_ERROR['plugin_MicrosoftTeams_ERROR_PHP_VERSION'] = 'Le plugiciel Microsoft Teams requiert PHP 5.3.0 ou plus';
+$MANTIS_ERROR['plugin_MicrosoftTeams_ERROR_CURL'] = 'La requête pour Microsoft Teams n\'est pas arrivée à destination.  Vérifiez votre URL de webhook.  Vérifiez aussi que le nom et l\'icône du bot MicrosoftTeams ne contiennent pas de caractère anormaux.   Regardez ci-dessous pour plus d\'informations.';
