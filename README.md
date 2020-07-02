@@ -28,4 +28,4 @@ A [MantisBT](http://www.mantisbt.org/) plugin to communicate with [Microsoft Tea
 
 # Forked
 
-This is a modified version of the [Slack Plugin](https://github.com/infojunkie/MantisBT-Slack) made by [Karim Ratib](https://github.com/infojunkie) and adapted for Teams by Hamdi Amine.
+This is a modified version of the [Slack Plugin](https://github.com/infojunkie/MantisBT-Slack) made by [Karim Ratib](https://github.com/infojunkie) and adapted for Teams by [Hamdi Amine](https://github.com/Hamdi-Amine).
