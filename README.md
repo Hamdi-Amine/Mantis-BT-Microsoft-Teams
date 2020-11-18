@@ -6,7 +6,7 @@ A [MantisBT](http://www.mantisbt.org/) plugin to communicate with [Microsoft Tea
 # Setup
 
 * The `master` branch requires Mantis 2.0.x
-* Extract this repo to your *Mantis folder/plugins/Teams*.
+* Extract this repo to your *Mantis folder/plugins/MicrosoftTeams*.
 * On the Teams side, create a new Webhook (found in *Incomming Webhook*) and note the URL that Teams generates for you,see [Documentation](https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-incoming-webhook).
 * On the MantisBT side, access the plugin's configuration page and fill in your Teams webhook URL.
 * You can map your MantisBT projects to other Incoming webhooks by setting the *plugin_Teams_url_webhooks* option in Mantis.  Follow the instructions on the plugin's configuration page to get there. Make sure the *plugin_Teams_url_webhooks* configuration option is set to "All Users", with type "complex".
