@@ -167,7 +167,7 @@ class MicrosoftTeamsPlugin extends MantisPlugin {
         $reporter = $this->get_user_name(auth_get_current_user_id());
         $summary = $this->format_summary($bug);
         $msg = sprintf(plugin_lang_get('bug_deleted'), $project, $reporter, $summary);
-        $this->notify($msg, $this->get_webhook($project), $this->get_channel($project),$project);
+        $this->notify($msg, $this->get_webhook($project), $this->get_channel($project), false, $project);
     }
 
     function bugnote_add_edit($event, $bug_id, $bugnote_id) {
@@ -213,7 +213,7 @@ class MicrosoftTeamsPlugin extends MantisPlugin {
         $summary = $this->format_summary($bug);
         $reporter = $this->get_user_name(auth_get_current_user_id());
         $msg = sprintf(plugin_lang_get('bugnote_deleted'), $project, $reporter, $url, $summary);
-        $this->notify($msg, $this->get_webhook($project), $this->get_channel($project),$project);
+        $this->notify($msg, $this->get_webhook($project), $this->get_channel($project), false, $project);
     }
 
     function format_summary($bug) {
