@@ -170,7 +170,7 @@ class MicrosoftTeamsPlugin extends MantisPlugin {
         $this->notify($msg, $this->get_webhook($project), $this->get_channel($project), false, $project);
     }
 
-    function bugnote_add_edit($event, $bug_id, $bugnote_id) {
+    function bugnote_add_edit($event, $bug_id, $bugnote_id, $file = null) {
         $bug = bug_get($bug_id);
         $bugnote = bugnote_get($bugnote_id);
 
