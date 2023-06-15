@@ -40,9 +40,11 @@ layout_page_begin();
 if (gpc_get_string( 'url_webhook_test', false )) {
 
   plugin_get()->notify(
-    plugin_lang_get('url_webhook_test_text'),
-    gpc_get_string( 'url_webhook' ),
-    gpc_get_string( 'default_channel' )
+    $msg = plugin_lang_get('url_webhook_test_text'),
+    $webhook = gpc_get_string( 'url_webhook' ),
+    $channel = gpc_get_string( 'default_channel' ),
+    $attachment = FALSE,
+    $project = plugin_lang_get('url_webhook_test'),
   );
 
 }
